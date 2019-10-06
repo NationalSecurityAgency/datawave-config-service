@@ -5,11 +5,22 @@
         <artifactId>datawave-microservice-service-parent</artifactId>
         <groupId>gov.nsa.datawave.microservice</groupId>
         <version>1.5</version>
-        <relativePath>../service-parent</relativePath>
     </parent>
     <artifactId>config-service</artifactId>
     <version>1.4-SNAPSHOT</version>
     <description>DATAWAVE Configuration Microservice</description>
+    <url>https://code.nsa.gov/datawave-config-service</url>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+    <scm>
+        <connection>scm:git:https://github.com/NationalSecurityAgency/datawave-config-service.git</connection>
+        <developerConnection>scm:git:git@github.com:NationalSecurityAgency/datawave-config-service.git</developerConnection>
+        <url>https://github.com/NationalSecurityAgency/datawave-config-service</url>
+    </scm>
     <properties>
         <start-class>datawave.microservice.config.server.ConfigServerApplication</start-class>
         <version.microservice.starter>1.4</version.microservice.starter>
