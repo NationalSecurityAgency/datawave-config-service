@@ -24,7 +24,7 @@
     </scm>
     <properties>
         <start-class>datawave.microservice.config.server.ConfigServerApplication</start-class>
-        <version.microservice.starter>1.6.2</version.microservice.starter>
+        <version.microservice.starter>1.6.3</version.microservice.starter>
     </properties>
     <dependencyManagement>
         <dependencies>
