@@ -1,5 +1,7 @@
 # Config Service
 
+[![Apache License][li]][ll] ![Build Status](https://github.com/NationalSecurityAgency/datawave-config-service/workflows/Tests/badge.svg)
+
 The Config service is an implementation of the Spring Cloud
 [config](https://cloud.spring.io/spring-cloud-static/Greenwich.SR3/single/spring-cloud.html#_spring_cloud_config) 
 service with some DATAWAVE-specific extensions. In particular, this service
@@ -34,3 +36,6 @@ java -jar target/config-service*-exec.jar --spring.profiles.active=dev,nomessagi
 ```
 
 [sample-config]:https://github.com/NationalSecurityAgency/datawave-microservices-root/tree/master/sample_configuration
+
+[li]: http://img.shields.io/badge/license-ASL-blue.svg
+[ll]: https://www.apache.org/licenses/LICENSE-2.0
