@@ -1,7 +1,5 @@
 package datawave.microservice.config.server;
 
-import com.jcraft.jsch.Session;
-import com.jcraft.jsch.UserInfo;
 import org.eclipse.jgit.transport.JschConfigSessionFactory;
 import org.eclipse.jgit.transport.OpenSshConfig;
 import org.eclipse.jgit.transport.SshSessionFactory;
@@ -11,6 +9,9 @@ import org.springframework.cloud.config.environment.Environment;
 import org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentProperties;
 import org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository;
 import org.springframework.core.env.ConfigurableEnvironment;
+
+import com.jcraft.jsch.Session;
+import com.jcraft.jsch.UserInfo;
 
 /**
  * An extension of {@link MultipleJGitEnvironmentRepository} that sets up JGit to handle encrypted private keys for git.
