@@ -25,14 +25,14 @@
     </scm>
     <properties>
         <start-class>datawave.microservice.config.server.ConfigServerApplication</start-class>
-        <version.starter>4.0.0</version.starter>
+        <version.datawave.starter>4.0.0</version.datawave.starter>
     </properties>
     <dependencyManagement>
         <dependencies>
             <dependency>
                 <groupId>gov.nsa.datawave.microservice</groupId>
                 <artifactId>spring-boot-starter-datawave</artifactId>
-                <version>${version.starter}</version>
+                <version>${version.datawave.starter}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
