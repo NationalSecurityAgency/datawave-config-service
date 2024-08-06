@@ -101,6 +101,10 @@ spring:
     discovery:
       enabled: true
       failFast: true
+  query-results-rabbitmq:
+    discovery:
+        enabled: true
+        failFast: true
 
 ---
 
@@ -111,6 +115,9 @@ spring:
     bus:
       enabled: false
   rabbitmq:
+    discovery:
+      enabled: false
+  query-result-rabbitmq:
     discovery:
       enabled: false
 
