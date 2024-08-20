@@ -30,8 +30,6 @@ spring:
           timeout: 10
   rabbitmq:
     host: '${MESSAGING_SERVER_HOSTNAME:messaging}'
-  query-results-rabbitmq:
-    host: '${MESSAGING_SERVER_HOSTNAME:messaging}'
     port: 5673
 
 # Define encryption information so that we can encrypt/decrypt passwords.
@@ -101,10 +99,6 @@ spring:
     discovery:
       enabled: true
       failFast: true
-  query-results-rabbitmq:
-    discovery:
-        enabled: true
-        failFast: true
 
 ---
 
