@@ -30,6 +30,7 @@ spring:
           timeout: 10
   rabbitmq:
     host: '${MESSAGING_SERVER_HOSTNAME:messaging}'
+    port: 5673
 
 # Define encryption information so that we can encrypt/decrypt passwords.
 # KEYSTORE_LOCATION should be defined in the environment (or on the command-line with --encrypt.key-store.location=location)
@@ -58,6 +59,9 @@ spring:
           uri: 'file:///tmp/microservice-config'
   rabbitmq:
     host: '${MESSAGING_SERVER_HOSTNAME:localhost}'
+  query-result-rabbitmq:
+    host: '${MESSAGING_SERVER_HOSTNAME:localhost}'
+    port: 5673
 
 encrypt:
   failOnError: true
@@ -105,6 +109,9 @@ spring:
     bus:
       enabled: false
   rabbitmq:
+    discovery:
+      enabled: false
+  query-result-rabbitmq:
     discovery:
       enabled: false
 
